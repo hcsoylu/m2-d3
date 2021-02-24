@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Hello, world!</title>
+    <style>
+        .bold {
+            font-weight: bold;
+            font-size:30px;
+        }
+        .bold2{
+            font-weight: bold;
+            font-size:20px
+         }
+
+        }
+        .row{
+            border:2px solid
+        }
+        ul {
+    list-style-type: none;
+}
+
+section.ex1{
+    color:white;
+}
+
+section.ex1>div:nth-of-type(1)  {
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+}
+section>h1, section>p{
+    color:black
+}
+
+ex1-third > .col-12{
+    flex: 1;
+    display: flex;
+}
+
+section footer span{
+    font-weight: 900;
+    font-size: x-large;
+}
+
+.price{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.card-bottom>div:nth-last-of-type(1){
+    color:gray;
+    font-size: 0.7em;
+    
+    
+}
+
+.ex1-third{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 50;
+  }
+  
+  .save-me p {
+    text-align: left !important;
+    color: rgb(145, 143, 143);
+    font-size: 1.5rem;
+  }
+  
+  .card {
+    max-width: 750px;
+  }
+  
+  .card-img-top {
+    max-height: 300px;
+  }
+  
+  .card p {
+    font-size: 1rem;
+  }
+  
+  .card-header {
+    font-weight: 550;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  ul {
+    padding-left: 10px;
+  }
+  
+  .card-margin {
+    margin-bottom: 3rem;
+  }
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+    </nav>
+  </div>
+
+
+  <section class="container ex1">
+    <h1 class="text-center mt-4">Exercise 1</h1>
+    <p class="text-center">Recreate this table just using Bootstrap4 classes or styling, without adding / removing any DOM element</p>
+    <div class="row">
+      <div class="col-6 d-flex justify-content-center flex-column bg-success" style="border-right: 2px solid black;">
+        <p class="text-center">First Column<br>Height 400px;
+        <br>Green-ish background<br>Text Centered</p>
+      </div>
+      <div class="col-2 d-flex justify-content-end flex-column bg-primary">
+        <p>Second Column<br>Text To The bottom<br>
+        Bold, Blueish<br>
+        background</p>
+      </div>
+      <div class="col" style="color:black;background-color:yellow">
+          <div class="row ex1-third d-flex flex-column justify-content-between text-center" >
+              <div class="col-12" style="height:33%">Third Column Part1</div>
+              <div class="col-12 " style="height:100%">Third Column Part2</div>
+              <div class="col-12" style="height:100%">Third Column Part3</div>
+          </div>
+      </div>
+  </div>
+   
+  </section>
+
+
+      <h1 class="text-center">Exercise TWO</h1>
+      <div class="container">
+        <div class="row">
+        <div class="col col-12 col-md-6 col-lg-4 col-lg-3
+        ">
+        <div class="card text-center" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Free</h5><hr>
+              <p class="bold">€0 / mo<br></p>
+
+             <p> 10 users included<br>
+              2 GB of storage<br>
+               Email support<br>
+               10 users included</p>
+              <a href="#" class="btn btn-primary">Sign up for Free</a>
+            </div>
+        </div>
+          </div>
+          <div class="col col-12 col-md-6 col-lg-4 col-lg-3
+          ">
+          <div class="card text-center" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Pro</h5><hr>
+              <p class="bold">€15 / mo<br></p>
+
+              <p> 20 users included<br>
+               10 GB of storage<br>
+                Priority Email support<br>
+                help center access</p>
+              <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+          </div>
+          <div class="col col-12 col-md-6 col-lg-4 col-lg-3
+          ">
+          <div class="card text-center" style="width: 18rem;">
+
+            <div class="card-body">
+              <h5 class="card-title">Enterprise</h5><hr>
+              <p class="bold">€29 / mo<br></p>
+
+             <p> 30 users included<br>
+              15 GB of storage<br>
+               Phone and Email support<br>
+               Help center access</p>
+              <a href="#" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+          </div>
+        </div>
+    </div>
+      </div>
+      <h1 class="text-center">Exercise THREE</h1>
+      <div class="container">
+        <div class="row">
+        <div class="col col-12 col-md-6 col-lg-4 col-lg-3
+        ">
+        <div class="card text-center" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Free</h5><hr>
+              <p class="bold">€0 / mo<br></p>
+
+             <p> 10 users included<br>
+              2 GB of storage<br>
+               Email support<br>
+               10 users included</p>
+              <a href="#" class="btn btn-primary">Sign up for Free</a>
+            </div>
+        </div>
+          </div>
+          <div class="col col-12 col-md-6 col-lg-4 col-lg-3
+          ">
+          <div class="card text-center" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Pro</h5><hr>
+              <p class="bold">€15 / mo<br></p>
+
+              <p> 20 users included<br>
+               10 GB of storage<br>
+                Priority Email support<br>
+                help center access</p>
+              <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+          </div>
+          <div class="col col-12 col-md-6 col-lg-4 col-lg-3
+          ">
+          <div class="card text-center" style="width: 18rem;">
+
+            <div class="card-body">
+              <h5 class="card-title">Enterprise</h5><hr>
+              <p class="bold">€29 / mo<br></p>
+
+             <p> 30 users included<br>
+              15 GB of storage<br>
+               Phone and Email support<br>
+               Help center access</p>
+              <a href="#" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+          </div>
+        </div>
+    </div><div class="container">
+        <div class="row">
+        <div class="col col-12 col-md-6 col-lg-4 col-lg-3
+        ">
+        <div class="card text-center" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Free</h5><hr>
+              <p class="bold">€0 / mo<br></p>
+
+             <p> 10 users included<br>
+              2 GB of storage<br>
+               Email support<br>
+               10 users included</p>
+              <a href="#" class="btn btn-primary">Sign up for Free</a>
+            </div>
+        </div>
+          </div>
+          <div class="col col-12 col-md-6 col-lg-4 col-lg-3
+          ">
+          <div class="card text-center" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Pro</h5><hr>
+              <p class="bold">€15 / mo<br></p>
+
+              <p> 20 users included<br>
+               10 GB of storage<br>
+                Priority Email support<br>
+                help center access</p>
+              <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+          </div>
+          <div class="col col-12 col-md-6 col-lg-4 col-lg-3
+          ">
+          <div class="card text-center" style="width: 18rem;">
+
+            <div class="card-body">
+              <h5 class="card-title">Enterprise</h5><hr>
+              <p class="bold">€29 / mo<br></p>
+
+             <p> 30 users included<br>
+              15 GB of storage<br>
+               Phone and Email support<br>
+               Help center access</p>
+              <a href="#" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+          </div>
+        </div>
+    </div><div class="container">
+        <div class="row">
+        <div class="col col-12 col-md-6 col-lg-4 col-lg-3
+        ">
+        <div class="card text-center" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Free</h5><hr>
+              <p class="bold">€0 / mo<br></p>
+
+             <p> 10 users included<br>
+              2 GB of storage<br>
+               Email support<br>
+               10 users included</p>
+              <a href="#" class="btn btn-primary">Sign up for Free</a>
+            </div>
+        </div>
+          </div>
+          <div class="col col-12 col-md-6 col-lg-4 col-lg-3
+          ">
+          <div class="card text-center" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Pro</h5><hr>
+              <p class="bold">€15 / mo<br></p>
+
+              <p> 20 users included<br>
+               10 GB of storage<br>
+                Priority Email support<br>
+                help center access</p>
+              <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+          </div>
+          <div class="col col-12 col-md-6 col-lg-4 col-lg-3
+          ">
+          <div class="card text-center" style="width: 18rem;">
+
+            <div class="card-body">
+              <h5 class="card-title">Enterprise</h5><hr>
+              <p class="bold">€29 / mo<br></p>
+
+             <p> 30 users included<br>
+              15 GB of storage<br>
+               Phone and Email support<br>
+               Help center access</p>
+              <a href="#" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+          </div>
+        </div>
+    </div>
+    <h1 class="text-center">Exercise Five</h1><hr>
+    <footer class="container">
+    <div class="row">
+        <div class="col">
+            <ul>
+                <li class="bold2">Features</li>
+                <li>Cool stuff</li>
+                <li>Random Feature</li>
+                <li>Team Features</li>
+                <li>Stuff for developers</li>
+                <li>Another one</li>
+                <li>Last time</li>
+            </ul>
+        </div>
+        <div class="col"><ul>
+            <li class="bold2">Resource</li>
+            <li>Resource</li>
+            <li>Resource name</li>
+            <li>Another Resource</li>
+            <li>Final resource</li>
+        </ul></div>
+        <div class="col"><ul>
+            <li class="bold2">About</li>
+            <li>Team</li>
+            <li>Locations</li>
+            <li>Privacy</li>
+            <li>Terms</li>
+        </ul></div>
+        
+    </div>
+</footer>
+
+  </body>
+</html>
